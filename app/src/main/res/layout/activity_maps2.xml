@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Toolbar
+        android:id="@+id/req_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#AED581">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:src="@drawable/downarrow"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="PICK LOCATION"
+            android:textColor="#3f4658"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        >
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            tools:context=".MapsActivity"
+            android:elevation="10dp"
+            />
+        <Button
+            android:id="@+id/pickLocation"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="515dp"
+            android:layout_marginLeft="115dp"
+            android:elevation="10dp"
+            android:background="@drawable/custom_button"
+            android:text="Choose"
+            android:textColor="#ffff"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_search"
+            android:elevation="10dp"
+            android:id="@+id/SearchLayout">
+                        <AutoCompleteTextView
+                            android:layout_width="250dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="60dp"
+                           android:id="@+id/SearchBox"
+                            android:hint="Search for a place..."
+                            android:textColor="#000"
+                            android:textSize="17sp"
+                            android:singleLine="true"
+                            android:maxLength="25"
+                            android:imeOptions="actionSearch"></AutoCompleteTextView>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_search_black_24dp"></ImageView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+

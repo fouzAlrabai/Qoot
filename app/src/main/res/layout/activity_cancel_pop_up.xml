@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroundpop"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:background="#A8F83838"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="83dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#00B8AAAA"
+            android:src="@drawable/alert"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Warning!"
+            android:layout_marginTop="2dp"
+            android:textAlignment="center"
+            android:textColor="#3F3A3A"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:text="Are You Sure You Want To Cancel Your Request?"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="75dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/cancelbutton"
+                android:text="yes"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="75dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/nobutton"
+                android:text="No"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

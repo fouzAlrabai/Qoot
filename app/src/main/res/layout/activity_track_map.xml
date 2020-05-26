@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackMap">
+
+    <Toolbar
+        android:id="@+id/req_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#AED581">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:src="@drawable/downarrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="TRACK REQUEST"
+            android:textColor="#3f4658"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </Toolbar>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="688dp"
+        tools:context=".MapsActivity"
+        android:elevation="10dp"
+        android:layout_marginTop="45dp"
+        >
+        <Button
+            android:id="@+id/Track"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:elevation="10dp"
+            android:background="@drawable/custom_button"
+            android:text="Choose"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            />
+
+    </fragment>
+
+
+
+
+</RelativeLayout >

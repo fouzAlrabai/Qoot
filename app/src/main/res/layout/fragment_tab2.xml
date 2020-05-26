@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".tab1">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+
+        android:layout_width="355dp"
+        android:layout_height="458dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/box"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/food" />
+
+            <Spinner
+                android:id="@+id/FoodType"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="@color/colorAccent"
+                android:contextClickable="true"
+                android:drawSelectorOnTop="true"
+                android:ems="10"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/common_google_signin_btn_text_light_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/guest" />
+
+            <EditText
+                android:id="@+id/numberOfGuest"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="12dp"
+                android:ems="10"
+                android:hint="Number Of Guests"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_today_black_24dp" />
+
+            <TextView
+                android:id="@+id/pickUpDate1"
+                android:layout_width="111dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+
+                android:hint="MM/dd/yyyy"
+                android:inputType="date"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/pickuptime" />
+
+            <TextView
+                android:id="@+id/pickUpTime"
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+
+                android:hint="Pick Up Time"
+                android:inputType="time"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/note" />
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Any Note?"
+                android:inputType="textPersonName" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/submitReq"
+            android:layout_width="60dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_send_black_24dp"
+            app:maxImageSize="30dp"/>
+
+
+        <!--  <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/submitReq"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FDAA3C"
+            android:elevation="10dp"
+            android:src="@drawable/arrow"
+            android:tint="@android:color/white"
+            android:visibility="visible"
+            app:elevation="0dp"
+            app:fabCustomSize="60dp"
+            app:fabSize="normal"
+            app:maxImageSize="30dp"
+            tools:ignore="RelativeOverlap"
+            tools:visibility="visible" />-->
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

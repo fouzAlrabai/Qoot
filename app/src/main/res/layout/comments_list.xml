@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/box"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="343dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/commenter_name"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="23dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:text="Commenter Name" />
+
+            <!--<TextView
+                    android:id="@+id/tv_tgl_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:text="12:23:34"/>-->
+
+            <RatingBar
+                android:id="@+id/rate_star"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:isIndicator="true"
+                android:maxHeight="60dp"
+                android:minHeight="20dp"
+                android:numStars="5"
+                android:progressTint="#DAFFB340"
+                android:stepSize="0.25" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_desc_review"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/commenter_name"
+            android:layout_marginLeft="25dp"
+            android:textSize="16dp"
+            tools:text="comment" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"></LinearLayout>
+
+</LinearLayout>
+

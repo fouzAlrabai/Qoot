@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".tab1">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+
+        android:layout_width="330dp"
+        android:layout_height="451dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/box"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/food" />
+
+            <Spinner
+                android:id="@+id/FoodType"
+                android:layout_width="260dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="@color/colorAccent"
+                android:contextClickable="true"
+                android:drawSelectorOnTop="true"
+                android:ems="10"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/guest" />
+
+            <EditText
+                android:id="@+id/numberOfGuest"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="12dp"
+                android:ems="10"
+                android:hint="Number Of Guests"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_today_black_24dp" />
+
+            <TextView
+                android:id="@+id/pickUpDate"
+                android:layout_width="111dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Today Date"
+                android:inputType="date"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/pickuptime" />
+
+            <TextView
+                android:id="@+id/pickUpTime"
+                android:layout_width="118dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Pick Up Time"
+                android:inputType="time"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/note" />
+
+            <EditText
+                android:id="@+id/note"
+                android:layout_width="260dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Any Note?"
+                android:inputType="textPersonName" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:padding="0dp">
+
+            <Button
+                android:id="@+id/buttonCapture"
+                android:layout_width="127dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_button"
+                android:text="Capture"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="90dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Picture is Attached"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold|italic"-->
+<!--                android:textColor="#CF4A4A"-->
+<!--                android:clickable="true"-->
+<!--               android:visibility="gone"-->
+<!--                android:id="@+id/ViewAttachment"-->
+<!--                ></TextView>-->
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/submitReq"
+            android:layout_width="60dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_send_black_24dp"
+            app:maxImageSize="30dp" />
+
+        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FDAA3C"
+            android:elevation="10dp"
+            android:src="@drawable/arrow"
+            android:tint="@android:color/white"
+            android:visibility="visible"
+            app:elevation="0dp"
+            app:fabCustomSize="60dp"
+            app:fabSize="normal"
+            app:maxImageSize="30dp"
+            tools:ignore="RelativeOverlap"
+            tools:visibility="visible" />-->
+
+    </LinearLayout>
+
+
+
+
+
+
+</FrameLayout>
+

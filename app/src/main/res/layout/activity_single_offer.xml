@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5FA"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/req1"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginBottom="10dp"
+        android:background="#80E4E2E2"
+        android:clickable="true"
+        android:orientation="vertical">
+
+
+        =
+    </LinearLayout>
+    <!-- android:onClick="" -->
+
+
+    <ImageView
+        android:id="@+id/userimage"
+        android:layout_width="96dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/ic_account_box_black_24dp" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/userimage"
+        android:layout_toRightOf="@+id/userimage"
+        android:maxLines="1"
+        android:text="Ahmad"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/username"
+        android:layout_toRightOf="@id/userimage">
+
+
+        <LinearLayout
+            android:id="@+id/lay_away"
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:background="#00F3F1C7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/away_km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="0.0 km"
+                android:textColor="#E43F4658"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/away_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="away"
+                android:textColor="#98BD82"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:background="#00F3F1C7"
+            android:backgroundTint="#00A5BDA3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vehicle_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Truck"
+                android:textColor="#E43F4658"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/vehicle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle"
+                android:textColor="#98BD82"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:background="#00F3F1C7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ratenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="4.5"
+                android:textColor="#E43F4658"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/Rateimsge"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+
+                app:srcCompat="@drawable/star" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Accept_offer"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="83dp"
+        android:backgroundTint="#AED581"
+        android:text="Accept"
+        android:textColor="#ffff"
+        android:textSize="11sp"
+        android:onClick="OpenDonatorRequest"/>
+
+
+</RelativeLayout>
+

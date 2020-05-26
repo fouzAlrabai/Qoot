@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity=""
+    android:padding="6dp">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/req1"
+        android:layout_marginStart="2dp"
+        android:layout_width="385dp"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/box">
+
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/EventT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Event Type:"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:id="@+id/EventType1"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:text="EventType"
+                android:textSize="19dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Status:"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/status1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Status"
+                android:textSize="19dp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_marginTop="20dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/box"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/reqType1"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:src="@drawable/geenschedule" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- android:onClick="" -->
+
+
+</RelativeLayout>

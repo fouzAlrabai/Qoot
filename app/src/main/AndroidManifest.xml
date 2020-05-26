@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qoot">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DonatorMap"></activity>
+        <activity android:name=".TrackMap" />
+        <activity android:name=".VolAllCommentView" />
+        <activity android:name=".DonViewAllComment" />
+        <activity android:name=".VolunteerAllComment" />
+        <activity android:name=".ChatPageV" />
+        <!--<activity android:name=".volnteer_all_comments" />-->
+        <activity android:name=".ChatPageD"/>
+        <activity android:name=".history_d"/>
+        <activity android:name=".history_v"/>
+
+        <activity
+            android:name=".pop_review2"
+            android:theme="@style/AppTheme.customWindowPop" />
+        <activity android:name=".AttachmentPicture" />
+        <activity android:name=".DonatorViewInfo" />
+        <activity
+            android:name=".VolunteerCancel"
+            android:theme="@style/AppTheme.customWindowPop" />
+        <activity android:name=".SingleNotification" />
+        <activity android:name=".location" />
+        <activity
+            android:name=".PopReview"
+            android:theme="@style/AppTheme.customWindowPop" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".VolunteerMap"
+            android:label="@string/title_activity_volunteer_map" />
+        <activity android:name=".MapsActivity2" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".volunteer_notification" >
+            <intent-filter>
+                <action android:name="clicks"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".DonatorNotifications" >
+            <intent-filter>
+                <action android:name="click"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".single_offer" />
+        <activity android:name=".list_offers" />
+        <activity android:name=".VolunteerRequestInfo" />
+        <activity android:name=".DonatorRequestInfo" />
+        <activity android:name=".requestForm" />
+        <activity android:name=".DonatorRequests" />
+        <activity android:name=".DonatorProfile" />
+        <activity android:name=".DonatorAllComments" />
+        <activity android:name=".EditDonatorProfile" />
+        <activity android:name=".LogIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditVolunteerProfile" />
+        <activity android:name=".VolunteerProfile" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".RegisterAsDonator" />
+        <activity android:name=".RegisterAsVolunteer" />
+        <activity android:name=".SignUpAs" />
+        <activity android:name=".VolunteerRequests" />
+        <activity android:name=".AllRequests" />
+        <activity
+            android:name=".cancelPopUp"
+            android:theme="@style/AppTheme.customWindowPop" />
+        <activity android:name=".VolunteerViewInfo" />
+
+        <service
+            android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

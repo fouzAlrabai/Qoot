@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttachmentPicture">
+
+    <Toolbar
+        android:id="@+id/req_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#AED581">
+
+        <ImageView
+            android:id="@+id/Back"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:src="@drawable/downarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="OpenRequestInfo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="ATTACHMENT"
+            android:textColor="#3f4658"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="100dp"
+        android:text="No Attachments!"
+        android:textSize="20dp"
+        android:id="@+id/NO_attach"
+        android:visibility="invisible"
+        />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_marginTop="90dp"
+    android:id="@+id/ATTACHED"
+    ></ImageView>
+
+</RelativeLayout>

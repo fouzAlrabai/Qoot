@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/notifi_vol"
+        android:title="Notification"
+
+        android:icon="@drawable/ic_add_alert_black_24dp" />
+
+
+    <item
+        android:id="@+id/browse_vol"
+        android:title="Browse"
+        android:icon="@drawable/browsing" />
+
+
+    <item
+        android:id="@+id/Req_vol"
+        android:title="My Requests"
+        android:icon="@drawable/ic_library_books_black_24dp" />
+
+    <item
+        android:id="@+id/prfile_vol"
+        android:title="Me"
+        android:icon="@drawable/ic_account_circle_black_24dp" />
+
+
+</menu>

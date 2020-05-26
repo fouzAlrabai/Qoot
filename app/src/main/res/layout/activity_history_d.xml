@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".history_d">
+
+
+    <Toolbar
+        android:id="@+id/his_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#AED581">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:onClick="opentDonatorRequset"
+            android:src="@drawable/downarrow" />
+
+        <!-- <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/downarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /> -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="MY History"
+            android:textColor="#3f4658"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </Toolbar>
+
+
+    <ListView
+        android:id="@+id/hisDList"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_below="@+id/his_bar"
+        />
+
+
+</RelativeLayout>
